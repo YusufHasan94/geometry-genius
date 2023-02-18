@@ -14,6 +14,153 @@
         <h1 class="text-3xl font-bold">Interactive<br><span class="text-xl font-semibold text-slate-400">Geometry Genius</span></h1>
         <a href="blog.html" class="px-6 py-2 rounded-xl bg-sky-600 text-white font-bold">Blog</a>
     </header>
+    <main>
+        <section class="m-4 flex gap-2">
+            <div class="shapeContainer w-3/4 gap-3">
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard1">
+                    <div>
+                        <img src="images/triangle.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <h2 class="text-xl font-semibold">Triangle</h2>
+                        <h4>Area (A) = 0.5&#215;b&#215;h</h4>
+                        <div class="flex items-center gap-4">
+                            <h4>b = <span></span> cm</h4>
+                            <h4>h = <span></span> cm</h4>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                    </div>
+                </div> 
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard2">
+                    <div>
+                        <img src="images/rectangle.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <h2 class="text-xl font-semibold">Rectangle</h2>
+                        <h4>Area (A) = w&#215;l</h4>
+                        <div class="flex items-center gap-4">
+                            <h4>w = <span></span> cm</h4>
+                            <h4>l = <span></span> cm</h4>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                    </div>
+                </div>
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard3">
+                    <div>
+                        <img src="images/parallelogram.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <h2 class="text-xl font-semibold">Parallelogram</h2>
+                        <h4>Area (A) = b&#215;h</h4>
+                        <div class="flex items-center gap-4">
+                            <h4>b = <span></span> cm</h4>
+                            <h4>h = <span></span> cm</h4>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                    </div>
+                </div>
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard4">
+                    <div>
+                        <img src="images/rhombus.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <h2 class="text-xl font-semibold">Rhombus</h2>
+                        <h4>Area (A) = 0.5&#215;d<sub>1</sub>&#215;b<sub>2</sub></h4>
+                        <div class="flex items-center gap-4">
+                            <h4>d<sub>1</sub> = <span></span> cm</h4>
+                            <h4>d<sub>2</sub>  = <span></span> cm</h4>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                    </div>
+                </div>
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard5">
+                    <div>
+                        <img src="images/pentagon.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <h2 class="text-xl font-semibold">Pentagon</h2>
+                        <h4>Area (A) = 0.5&#215;p&#215;b </h4>
+                        <div class="flex items-center gap-4">
+                            <h4>p = <span></span> cm</h4>
+                            <h4>b = <span></span> cm</h4>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                    </div>
+                </div>
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard6">
+                    <div>
+                        <img src="images/ellipse.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <h2 class="text-xl font-semibold">Ellipse</h2>
+                        <h4>Area (A) =&pi;ab</span></h4>
+                        <div class="flex items-center gap-4">
+                            <h4>a = <span></span> cm</h4>
+                            <h4>b = <span></span> cm</h4>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="AreaContainer w-1/4 shadow">
+                <div>
+                    <h1 class="text-center p-2 font-bold underline">Area Calculation</h1>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>
