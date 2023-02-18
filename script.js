@@ -22,21 +22,30 @@ for (const shapes of shape) {
 //accept value from input field
 //convert string to number
 function convertStringToNumber(str){
-    let getString = str.value;
-    let getNumber = parseFloat(getString);
+    let getNumber = parseFloat(str);
     return getNumber;
 }
+//calculation function
+function calculation1(value1, value2){
+    let result = 0.5*value1*value2;
+    return result;
+}
+
+function calculation2(value1, value2){
+    let result = value1*value2;
+    return result;
+}
 //triangle 
-var TriangleField1Value, TriangleField2Value, TriangleTotalValue;
+var TriangleField1Value, TriangleField2Value, TriangleTotalValue, TriangleField1Str, TriangleField2Str;
 let triangleSubmit = document.getElementById('triangleSubmit');
 triangleSubmit.addEventListener('click', function(){
     document.getElementById('triangleValueArea').style.display ="block";
     let TriangleField1 = document.getElementById('TriangleField1');
-    let TriangleField1Str = TriangleField1.value;
+        TriangleField1Str = TriangleField1.value;
         TriangleField1Value = convertStringToNumber(TriangleField1Str);
     
     let TriangleField2 = document.getElementById('TriangleField2');
-    let TriangleField2Str = TriangleField2.value;
+        TriangleField2Str = TriangleField2.value;
         TriangleField2Value = convertStringToNumber(TriangleField2Str);
 
     let triangleDisplay1 = document.getElementById('triangleDisplay1');
@@ -50,6 +59,8 @@ triangleSubmit.addEventListener('click', function(){
 
     let triangleInputArea = document.getElementById('triangleInputArea');
         triangleInputArea.style.display = 'none';
+
+    console.log(TriangleField1Value, TriangleField2Value);
         
 });
 let editTriangleValue = document.getElementById('editTriangleValue');
@@ -57,6 +68,25 @@ editTriangleValue.addEventListener('click', function(){
     document.getElementById('triangleInputArea').style.display = "block";
     document.getElementById('triangleValueArea').style.display ="none";
 });
+
+//validation & calculation of triangle
+
+let triangleCalculate = document.getElementById('triangleCalculate');
+triangleCalculate.addEventListener('click',function(){
+    if(typeof(TriangleField1Value) === 'number' && typeof(TriangleField2Value) === 'number'){
+        if(TriangleField1Value>=0 && TriangleField2Value>=0){
+            TriangleTotalValue = calculation1(TriangleField1Value, TriangleField2Value);
+            console.log(TriangleTotalValue); 
+        }
+        else{
+            return;
+        }
+    }
+    else{
+        return;
+    }
+});
+
 
 //rectangle
 var rectangleField1Value, rectangleField2Value, rectangleTotalValue;
@@ -217,4 +247,5 @@ editEllipseValue.addEventListener('click', function(){
     document.getElementById('ellipseInputArea').style.display = "block";
     document.getElementById('ellipseValueArea').style.display ="none";
 });
+
 
