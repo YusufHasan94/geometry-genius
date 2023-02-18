@@ -5,3 +5,17 @@
 .AreaContainer{
     width: 25%;
 }
+@media screen and (max-width: 576px){
+    .mainUI{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shapeContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .AreaContainer{
+        width: 100%;
+    }
+}

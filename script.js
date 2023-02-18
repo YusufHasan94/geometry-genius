@@ -99,11 +99,11 @@ triangleCalculate.addEventListener('click',function(){
             addingResult("Triangle",TriangleTotalValue);          
         }
         else{
-            return;
+            alert("please enter valid value");
         }
     }
     else{
-        return;
+        alert("please enter valid value");
     }
 });
 
@@ -151,11 +151,11 @@ rectangleCalculate.addEventListener('click',function(){
             addingResult("Rectangle",rectangleTotalValue);
         }
         else{
-            return;
+            alert("please enter valid value");
         }
     }
     else{
-        return;
+        alert("please enter valid value");
     }
 });
 
@@ -202,11 +202,11 @@ parallelogramCalculate.addEventListener('click',function(){
             addingResult("Parallelogram",parallelogramTotalValue);
         }
         else{
-            return;
+            alert("please enter valid value");
         }
     }
     else{
-        return;
+        alert("please enter valid value");
     }
 });
 
@@ -253,11 +253,11 @@ rhombusCalculate.addEventListener('click',function(){
             addingResult("Rhombus",rhombusTotalValue);
         }
         else{
-            return;
+            alert("please enter valid value");
         }
     }
     else{
-        return;
+        alert("please enter valid value");
     }
 });
 
@@ -304,11 +304,11 @@ pentagonCalculate.addEventListener('click',function(){
             addingResult("Pentagon",pentagonTotalValue);
         }
         else{
-            return;
+            alert("please enter valid value");
         }
     }
     else{
-        return;
+        alert("please enter valid value");
     }
 });
 
@@ -355,11 +355,11 @@ ellipseCalculate.addEventListener('click',function(){
             addingResult("Ellipse",ellipseTotalValue);
         }
         else{
-            return;
+            alert("please enter valid value");
         }
     }
     else{
-        return;
+        alert("please enter valid value");
     }
 });
 
