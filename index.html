@@ -17,132 +17,168 @@
     <main>
         <section class="m-4 flex gap-2">
             <div class="shapeContainer w-3/4 gap-3">
-                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard1">
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
                     <div>
                         <img src="images/triangle.png" alt="">
                     </div>
                     <div class="flex flex-col items-center gap-2">
                         <h2 class="text-xl font-semibold">Triangle</h2>
                         <h4>Area (A) = 0.5&#215;b&#215;h</h4>
-                        <div class="flex items-center gap-4">
-                            <h4>b = <span></span> cm</h4>
-                            <h4>h = <span></span> cm</h4>
-                            <i class="fa-solid fa-pen-to-square"></i>
+                        <div id="triangleValueArea" class="hidden">
+                            <div class="flex items-center gap-4">
+                                <h4 class="">b = <span id="triangleDisplay1"></span> cm</h4>
+                                <h4 class="">h = <span id="triangleDisplay2"></span> cm</h4>
+                                <button id="editTriangleValue">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        <div id="triangleInputArea" class="">
+                            <div class="flex items-center gap-3">
+                                <input type="number" name="" id="TriangleField1" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <input type="number" name="" id="TriangleField2" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <button id="triangleSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full">
                         <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
                     </div>
                 </div> 
-                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard2">
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
                     <div>
                         <img src="images/rectangle.png" alt="">
                     </div>
                     <div class="flex flex-col items-center gap-2">
                         <h2 class="text-xl font-semibold">Rectangle</h2>
                         <h4>Area (A) = w&#215;l</h4>
-                        <div class="flex items-center gap-4">
-                            <h4>w = <span></span> cm</h4>
-                            <h4>l = <span></span> cm</h4>
-                            <i class="fa-solid fa-pen-to-square"></i>
+                        <div id="rectangleValueArea" class="hidden">
+                            <div class="flex items-center gap-4">
+                                <h4 class="">b = <span id="rectangleDisplay1"></span> cm</h4>
+                                <h4 class="">h = <span id="rectangleDisplay2"></span> cm</h4>
+                                <button id="editrectangleValue">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        <div id="rectangleInputArea" class="">
+                            <div class="flex items-center gap-3">
+                                <input type="number" name="" id="rectangleField1" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <input type="number" name="" id="rectangleField2" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <button id="rectangleSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full">
                         <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
                     </div>
-                </div>
-                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard3">
+                </div> 
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
                     <div>
                         <img src="images/parallelogram.png" alt="">
                     </div>
                     <div class="flex flex-col items-center gap-2">
                         <h2 class="text-xl font-semibold">Parallelogram</h2>
                         <h4>Area (A) = b&#215;h</h4>
-                        <div class="flex items-center gap-4">
-                            <h4>b = <span></span> cm</h4>
-                            <h4>h = <span></span> cm</h4>
-                            <i class="fa-solid fa-pen-to-square"></i>
+                        <div id="parallelogramValueArea" class="hidden">
+                            <div class="flex items-center gap-4">
+                                <h4 class="">b = <span id="parallelogramDisplay1"></span> cm</h4>
+                                <h4 class="">h = <span id="parallelogramDisplay2"></span> cm</h4>
+                                <button id="editparallelogramValue">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        <div id="parallelogramInputArea" class="">
+                            <div class="flex items-center gap-3">
+                                <input type="number" name="" id="parallelogramField1" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <input type="number" name="" id="parallelogramField2" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <button id="parallelogramSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full">
                         <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
                     </div>
-                </div>
-                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard4">
+                </div> 
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
                     <div>
                         <img src="images/rhombus.png" alt="">
                     </div>
                     <div class="flex flex-col items-center gap-2">
                         <h2 class="text-xl font-semibold">Rhombus</h2>
-                        <h4>Area (A) = 0.5&#215;d<sub>1</sub>&#215;b<sub>2</sub></h4>
-                        <div class="flex items-center gap-4">
-                            <h4>d<sub>1</sub> = <span></span> cm</h4>
-                            <h4>d<sub>2</sub>  = <span></span> cm</h4>
-                            <i class="fa-solid fa-pen-to-square"></i>
+                        <h4>Area (A) = 0.5&#215;d<sub>1</sub>&#215;d<sub>2</sub> </h4>
+                        <div id="rhombusValueArea" class="hidden">
+                            <div class="flex items-center gap-4">
+                                <h4 class="">d<sub>1</sub> = <span id="rhombusDisplay1"></span> cm</h4>
+                                <h4 class="">d<sub>2</sub> = <span id="rhombusDisplay2"></span> cm</h4>
+                                <button id="editrhombusValue">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        <div id="rhombusInputArea" class="">
+                            <div class="flex items-center gap-3">
+                                <input type="number" name="" id="rhombusField1" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <input type="number" name="" id="rhombusField2" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <button id="rhombusSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full">
                         <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
                     </div>
-                </div>
-                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard5">
+                </div> 
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
                     <div>
                         <img src="images/pentagon.png" alt="">
                     </div>
                     <div class="flex flex-col items-center gap-2">
                         <h2 class="text-xl font-semibold">Pentagon</h2>
-                        <h4>Area (A) = 0.5&#215;p&#215;b </h4>
-                        <div class="flex items-center gap-4">
-                            <h4>p = <span></span> cm</h4>
-                            <h4>b = <span></span> cm</h4>
-                            <i class="fa-solid fa-pen-to-square"></i>
+                        <h4>Area (A) = 0.5&#215;p&#215;b</h4>
+                        <div id="pentagonValueArea" class="hidden">
+                            <div class="flex items-center gap-4">
+                                <h4 class="">p = <span id="pentagonDisplay1"></span> cm</h4>
+                                <h4 class="">b = <span id="pentagonDisplay2"></span> cm</h4>
+                                <button id="editpentagonValue">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        <div id="pentagonInputArea" class="">
+                            <div class="flex items-center gap-3">
+                                <input type="number" name="" id="pentagonField1" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <input type="number" name="" id="pentagonField2" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <button id="pentagonSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full">
                         <button class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
                     </div>
-                </div>
-                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard" id="shapeCard6">
+                </div> 
+                <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
                     <div>
                         <img src="images/ellipse.png" alt="">
                     </div>
                     <div class="flex flex-col items-center gap-2">
                         <h2 class="text-xl font-semibold">Ellipse</h2>
-                        <h4>Area (A) =&pi;ab</span></h4>
-                        <div class="flex items-center gap-4">
-                            <h4>a = <span></span> cm</h4>
-                            <h4>b = <span></span> cm</h4>
-                            <i class="fa-solid fa-pen-to-square"></i>
+                        <h4>Area (A) = &pi;ab</h4>
+                        <div id="ellipseValueArea" class="hidden">
+                            <div class="flex items-center gap-4">
+                                <h4 class="">a = <span id="ellipseDisplay1"></span> cm</h4>
+                                <h4 class="">b = <span id="ellipseDisplay2"></span> cm</h4>
+                                <button id="editellipseValue">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <input type="number" name="" id="" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
-                            <button class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                        <div id="ellipseInputArea" class="">
+                            <div class="flex items-center gap-3">
+                                <input type="number" name="" id="ellipseField1" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <input type="number" name="" id="ellipseField2" class="bg-neutral-200 w-1/2 rounded"> <span>cm</span>
+                                <button id="ellipseSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                            </div>
                         </div>
                     </div>
                     <div class="w-full">

@@ -1,4 +1,5 @@
 let shape = document.getElementsByClassName('shapeCard');
+//hover effect on shapes card
 var symbol, color;
 for (const shapes of shape) {
     shapes.addEventListener('mouseover', function(){
@@ -17,3 +18,12 @@ for (const shapes of shape) {
         }
     });
 }
+
+//accept value from input field
+//convert string to number
+function convertStringToNumber(str){
+    let getString = str.value;
+    let getNumber = parseFloat(getString);
+    return getNumber;
+}
+//triangle 
