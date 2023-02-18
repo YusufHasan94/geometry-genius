@@ -41,7 +41,7 @@ function calculation3(value1, value2){
 }
 
 //object for storing value
-let results = [];
+let outputResult = {};
 
 //triangle 
 var TriangleField1Value, TriangleField2Value, TriangleTotalValue;
@@ -85,6 +85,10 @@ triangleCalculate.addEventListener('click',function(){
         if(TriangleField1Value>=0 && TriangleField2Value>=0){
             TriangleTotalValue = calculation1(TriangleField1Value, TriangleField2Value);
             console.log(TriangleTotalValue); 
+
+            //ResultsContainer.insertAdjacentHTML('beforeend','<div class="ResultsContainer">beforeEnd</div>');
+            //let getElementById = document.getElementById('ResultsContainer');
+            
         }
         else{
             return;
