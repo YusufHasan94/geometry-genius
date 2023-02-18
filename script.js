@@ -40,8 +40,19 @@ function calculation3(value1, value2){
     return result.toFixed(2);
 }
 
-//object for storing value
-let outputResult = {};
+//adding result function for display
+
+function addingResult(name, res){
+    console.log(name, res);
+    let resContainer = document.getElementById('ResultsContainer');
+    resContainer.insertAdjacentHTML('beforeend',`
+        <div class="flex justify-evenly items-center my-1">
+            <span class="text-xl">${name}</span>
+            <span class="text-xl">${res} cm<sup>2</sup></span>
+            <button class="p-2 bg-sky-600 text-white text-lg rounded ">Convert to m<sup>2<sup></button>
+        </div>
+    `);
+}
 
 //triangle 
 var TriangleField1Value, TriangleField2Value, TriangleTotalValue;
@@ -49,12 +60,11 @@ let triangleSubmit = document.getElementById('triangleSubmit');
 triangleSubmit.addEventListener('click', function(){
     document.getElementById('triangleValueArea').style.display ="block";
     let TriangleField1 = document.getElementById('TriangleField1');
-    let TriangleField1Str = TriangleField1.value;
-        TriangleField1Value = convertStringToNumber(TriangleField1Str);
-    
     let TriangleField2 = document.getElementById('TriangleField2');
+    let TriangleField1Str = TriangleField1.value;
+    TriangleField1Value = convertStringToNumber(TriangleField1Str);
     let TriangleField2Str = TriangleField2.value;
-        TriangleField2Value = convertStringToNumber(TriangleField2Str);
+    TriangleField2Value = convertStringToNumber(TriangleField2Str);
 
     let triangleDisplay1 = document.getElementById('triangleDisplay1');
         triangleDisplay1.innerText = TriangleField1Str;
@@ -86,9 +96,7 @@ triangleCalculate.addEventListener('click',function(){
             TriangleTotalValue = calculation1(TriangleField1Value, TriangleField2Value);
             console.log(TriangleTotalValue); 
 
-            //ResultsContainer.insertAdjacentHTML('beforeend','<div class="ResultsContainer">beforeEnd</div>');
-            //let getElementById = document.getElementById('ResultsContainer');
-            
+            addingResult("Triangle",TriangleTotalValue);          
         }
         else{
             return;
@@ -139,6 +147,8 @@ rectangleCalculate.addEventListener('click',function(){
         if(rectangleField1Value>=0 && rectangleField2Value>=0){
             rectangleTotalValue = calculation2(rectangleField1Value, rectangleField2Value);
             console.log(rectangleTotalValue); 
+
+            addingResult("Rectangle",rectangleTotalValue);
         }
         else{
             return;
@@ -187,7 +197,9 @@ parallelogramCalculate.addEventListener('click',function(){
     if(typeof(parallelogramField1Value) === 'number' && typeof(parallelogramField2Value) === 'number'){
         if(parallelogramField1Value>=0 && parallelogramField2Value>=0){
             parallelogramTotalValue = calculation2(parallelogramField1Value, parallelogramField2Value);
-            console.log(parallelogramTotalValue); 
+            console.log(parallelogramTotalValue);
+            
+            addingResult("Parallelogram",parallelogramTotalValue);
         }
         else{
             return;
@@ -237,6 +249,8 @@ rhombusCalculate.addEventListener('click',function(){
         if(rhombusField1Value>=0 && rhombusField2Value>=0){
             rhombusTotalValue = calculation1(rhombusField1Value, rhombusField2Value);
             console.log(rhombusTotalValue); 
+
+            addingResult("Rhombus",rhombusTotalValue);
         }
         else{
             return;
@@ -248,7 +262,7 @@ rhombusCalculate.addEventListener('click',function(){
 });
 
 //Pentagon
-var pentagonField1Value, pentagonField2Value, pentagonField2Value;
+var pentagonField1Value, pentagonField2Value, pentagonTotalValue;
 let pentagonSubmit = document.getElementById('pentagonSubmit');
 pentagonSubmit.addEventListener('click', function(){
     document.getElementById('pentagonValueArea').style.display ="block";
@@ -284,8 +298,10 @@ let pentagonCalculate = document.getElementById('pentagonCalculate');
 pentagonCalculate.addEventListener('click',function(){
     if(typeof(pentagonField1Value) === 'number' && typeof(pentagonField2Value) === 'number'){
         if(pentagonField1Value>=0 && pentagonField2Value>=0){
-            rhombusTotalValue = calculation1(pentagonField1Value, pentagonField2Value);
-            console.log(rhombusTotalValue); 
+            pentagonTotalValue = calculation1(pentagonField1Value, pentagonField2Value);
+            console.log(pentagonTotalValue); 
+
+            addingResult("Pentagon",pentagonTotalValue);
         }
         else{
             return;
@@ -335,6 +351,8 @@ ellipseCalculate.addEventListener('click',function(){
         if(ellipseField1Value>=0 && ellipseField2Value>=0){
             ellipseTotalValue = calculation3(ellipseField1Value, ellipseField2Value);
             console.log(ellipseTotalValue); 
+
+            addingResult("Ellipse",ellipseTotalValue);
         }
         else{
             return;
@@ -344,3 +362,5 @@ ellipseCalculate.addEventListener('click',function(){
         return;
     }
 });
+
+
