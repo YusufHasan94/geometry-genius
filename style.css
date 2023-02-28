@@ -2,8 +2,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.shapeContainer{
+    width: 65%;
+}
 .AreaContainer{
-    width: 25%;
+    width: 35%;
 }
 @media screen and (max-width: 576px){
     .mainUI{
@@ -14,6 +17,9 @@
     .shapeContainer{
         display: flex;
         flex-direction: column;
+    }
+    .shapeContainer{
+        width: 100%;
     }
     .AreaContainer{
         width: 100%;

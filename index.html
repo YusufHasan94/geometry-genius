@@ -16,7 +16,7 @@
     </header>
     <main>
         <section class="m-4 flex gap-2 mainUI">
-            <div class="shapeContainer w-3/4 gap-3">
+            <div class="shapeContainer gap-3">
                 <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
                     <div>
                         <img src="images/triangle.png" alt="">
@@ -33,15 +33,11 @@
                                 </button>
                             </div>
                         </div>
-                        <div id="triangleInputArea" class="">
+                        <div id="triangleInputArea" class="block">
                             <div class="flex items-center gap-3">
                                 <input type="number" name="" id="TriangleField1" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="b"> <span>cm</span>
                                 <input type="number" name="" id="TriangleField2" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="h"> <span>cm</span>
-                                <button id="triangleSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
                             </div>
-                        </div>
-                        <div>
-                            <span  class="errorCase hidden">* Enter valid input</span>
                         </div>
                     </div>
                     <div class="w-full">
@@ -67,8 +63,7 @@
                         <div id="rectangleInputArea" class="">
                             <div class="flex items-center gap-3">
                                 <input type="number" name="" id="rectangleField1" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="w"> <span>cm</span>
-                                <input type="number" name="" id="rectangleField2" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="l"> <span>cm</span>
-                                <button id="rectangleSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
+                                <input type="number" name="" id="rectangleField2" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="l"> <span>cm</span>                                
                             </div>
                         </div>
                     </div>
@@ -96,7 +91,6 @@
                             <div class="flex items-center gap-3">
                                 <input type="number" name="" id="parallelogramField1" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="b"> <span>cm</span>
                                 <input type="number" name="" id="parallelogramField2" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="h"> <span>cm</span>
-                                <button id="parallelogramSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
                             </div>
                         </div>
                     </div>
@@ -124,7 +118,6 @@
                             <div class="flex items-center gap-3">
                                 <input type="number" name="" id="rhombusField1" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="d1"> <span>cm</span>
                                 <input type="number" name="" id="rhombusField2" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="d2"> <span>cm</span>
-                                <button id="rhombusSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
                             </div>
                         </div>
                     </div>
@@ -152,7 +145,6 @@
                             <div class="flex items-center gap-3">
                                 <input type="number" name="" id="pentagonField1" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="p"> <span>cm</span>
                                 <input type="number" name="" id="pentagonField2" class="bg-neutral-200 w-1/2 rounded px-1" placeholder="b"> <span>cm</span>
-                                <button id="pentagonSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
                             </div>
                         </div>
                     </div>
@@ -180,7 +172,6 @@
                             <div class="flex items-center gap-3">
                                 <input type="number" name="" id="ellipseField1" class="bg-neutral-200 w-1/2 rounded p-1" placeholder="a"> <span>cm</span>
                                 <input type="number" name="" id="ellipseField2" class="bg-neutral-200 w-1/2 rounded p-1" placeholder="b"> <span>cm</span>
-                                <button id="ellipseSubmit" class="p-1 bg-sky-600 text-white rounded"><i class="fa-solid fa-check"></i></button>
                             </div>
                         </div>
                     </div>
@@ -193,7 +184,10 @@
                 <div>
                     <h1 class="text-center p-2 font-bold underline">Area Calculation</h1>
                 </div>
-                <div id="ResultsContainer" class="p-4">
+                <div id="" class="p-4">
+                    <ol id="ResultsContainer" class="list-decimal">
+
+                    </ol>
                     
                 </div>
             </div>
