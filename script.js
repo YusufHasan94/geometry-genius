@@ -38,30 +38,18 @@ function calculation3(value1, value2){
     let result = Math.PI*value1*value2;
     return result.toFixed(2);
 }
-
 //adding result into calculation area
-let count = 0;
 function addingResult(name, res){
-    count++;
     let resContainer = document.getElementById('ResultsContainer');
-    let newContainer = document.createElement('div');
+    let newContainer = document.createElement('li');
     newContainer.innerHTML = `
         <div class="flex justify-between items-center my-1 px-2">
-            <span class="text-xl">${count}.</span>
             <span class="text-xl">${name}</span>
             <span class="text-xl">${res} cm<sup>2</sup></span>
             <button class="p-2 bg-sky-600 text-white text-lg rounded ">Convert to m<sup>2<sup></button>
-            <button id="closeBtn" class="bg-red-600 text-white p-2 rounded" onclick="closeFun(event)"><i class="fa-solid fa-xmark"></i></button>
         </div>
     `;
     resContainer.appendChild(newContainer);
-}
-
-//function to delete selected item
-function closeFun(event){
-    count--;
-    let value = event.target.parentNode.parentNode;
-    value.innerHTML='';
 }
 
 //function for getting value and display
