@@ -28,7 +28,7 @@
                             <div class="flex items-center gap-4">
                                 <h4 class="">b = <span id="triangleDisplay1"></span> cm</h4>
                                 <h4 class="">h = <span id="triangleDisplay2"></span> cm</h4>
-                                <button id="editTriangleValue">
+                                <button id="editTriangleValue" class="editValues">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                 </button>
                             </div>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="w-full">
-                        <button id="triangleCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                        <button id="triangleCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded calculationBtn">Calculate</button>
                     </div>
                 </div> 
                 <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
@@ -55,7 +55,7 @@
                             <div class="flex items-center gap-4">
                                 <h4 class="">w = <span id="rectangleDisplay1"></span> cm</h4>
                                 <h4 class="">l = <span id="rectangleDisplay2"></span> cm</h4>
-                                <button id="editRectangleValue">
+                                <button id="editRectangleValue" class="editValues">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                 </button>
                             </div>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="w-full">
-                        <button id="rectangleCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                        <button id="rectangleCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded calculationBtn">Calculate</button>
                     </div>
                 </div> 
                 <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
@@ -82,7 +82,7 @@
                             <div class="flex items-center gap-4">
                                 <h4 class="">b = <span id="parallelogramDisplay1"></span> cm</h4>
                                 <h4 class="">h = <span id="parallelogramDisplay2"></span> cm</h4>
-                                <button id="editParallelogramValue">
+                                <button id="editParallelogramValue" class="editValues">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                 </button>
                             </div>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div class="w-full">
-                        <button id="parallelogramCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                        <button id="parallelogramCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded calculationBtn">Calculate</button>
                     </div>
                 </div> 
                 <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
@@ -109,7 +109,7 @@
                             <div class="flex items-center gap-4">
                                 <h4 class="">d<sub>1</sub> = <span id="rhombusDisplay1"></span> cm</h4>
                                 <h4 class="">d<sub>2</sub> = <span id="rhombusDisplay2"></span> cm</h4>
-                                <button id="editRhombusValue">
+                                <button id="editRhombusValue" class="editValues">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                 </button>
                             </div>
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <div class="w-full">
-                        <button id="rhombusCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                        <button id="rhombusCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded calculationBtn">Calculate</button>
                     </div>
                 </div> 
                 <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
@@ -136,7 +136,7 @@
                             <div class="flex items-center gap-4">
                                 <h4 class="">p = <span id="pentagonDisplay1"></span> cm</h4>
                                 <h4 class="">b = <span id="pentagonDisplay2"></span> cm</h4>
-                                <button id="editPentagonValue">
+                                <button id="editPentagonValue" class="editValues">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                 </button>
                             </div>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="w-full">
-                        <button id="pentagonCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                        <button id="pentagonCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded calculationBtn">Calculate</button>
                     </div>
                 </div> 
                 <div class="shadow flex flex-col items-center justify-evenly gap-4 p-4 rounded shapeCard">
@@ -163,7 +163,7 @@
                             <div class="flex items-center gap-4">
                                 <h4 class="">a = <span id="ellipseDisplay1"></span> cm</h4>
                                 <h4 class="">b = <span id="ellipseDisplay2"></span> cm</h4>
-                                <button id="editEllipseValue">
+                                <button id="editEllipseValue" class="editValues">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                 </button>
                             </div>
@@ -176,7 +176,7 @@
                         </div>
                     </div>
                     <div class="w-full">
-                        <button id="ellipseCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded">Calculate</button>
+                        <button id="ellipseCalculate" class="w-full bg-sky-600 text-white font-bold p-1 rounded calculationBtn">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -184,11 +184,7 @@
                 <div>
                     <h1 class="text-center p-2 font-bold underline">Area Calculation</h1>
                 </div>
-                <div id="" class="p-4">
-                    <ol id="ResultsContainer" class="list-decimal">
-
-                    </ol>
-                    
+                <div id="ResultsContainer" class="p-2 gap-1">                    
                 </div>
             </div>
         </section>
